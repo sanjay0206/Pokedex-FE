@@ -1,0 +1,221 @@
+body {
+  background-color: rgb(176, 18, 18);
+  color: white;
+  margin: 0;
+  font-family: rubik;
+}
+
+.social-links a:hover {
+  color: #c97171;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items vertically in the center */
+  margin-top: 20px;
+}
+
+.pagination-button,
+#currentPage {
+  margin: 0 5px;
+}
+
+.pagination-button {
+  background-color: #f4f4f4;
+  color: rgb(176, 18, 18);
+  border: 1px solid rgb(176, 18, 18);
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.pagination-button:hover {
+  background-color: #c97171;
+  color: #f4f4f4;
+}
+
+#currentPage {
+  font-size: 16px;
+}
+
+#unauthorized-message {
+  text-align: center;
+  position: absolute;
+  font-size: 35px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  padding-inline-start: 0;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+.card-title {
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.card-subtitle {
+  margin-top: 5px;
+  color: #666;
+  font-weight: lighter;
+}
+
+.card-image {
+  height: 180px;
+}
+
+#searchBar {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  background: #f4f4f4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Add this line to vertically align items */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  outline: none;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  color: rgb(176, 18, 18);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  flex-grow: 1;
+}
+.pokemon-logo {
+  width: 65px;
+  margin-left: 2px;
+  margin-right: 10px;
+  vertical-align: left;
+}
+
+.logout-btn {
+  font-family: "Rubik", sans-serif;
+  padding: 8px;
+  background-color: rgb(176, 18, 18);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  white-space: nowrap;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+  background-color: #c97171;
+}
+
+button:hover {
+  background-color: #c97171;
+}
+
+.login-btn {
+  width: 100%;
+  max-width: 100px;
+  padding: 15px;
+  margin-top: 15px;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(176, 18, 18);
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  #unauthorized-message {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center; /* Center elements in the column */
+  }
+  .login-btn {
+    font-size: 0.9rem; /* Adjust the font size for smaller screens */
+    padding: 12px; /* Adjust the padding for smaller screens */
+  }
+
+  .brand,
+  .logout-btn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; /* Add some space between elements */
+  }
+}

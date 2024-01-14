@@ -1,0 +1,80 @@
+body {
+  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7e3367e1-3ddb-4a79-887f-a0eab3757ba0/d33r5nv-9397298d-8f28-47d3-b561-6f9796fa7e2c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdlMzM2N2UxLTNkZGItNGE3OS04ODdmLWEwZWFiMzc1N2JhMFwvZDMzcjVudi05Mzk3Mjk4ZC04ZjI4LTQ3ZDMtYjU2MS02Zjk3OTZmYTdlMmMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.97GkwmMCGg7nLatw-v01SkTPXvS7z_rQQ7v-zFkdDtA")
+    no-repeat center center fixed;
+  margin: 0;
+  background-size: cover;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #f4f4f4;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+}
+
+#loginForm {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+#loginForm input {
+  background-color: rgb(176, 18, 18);
+  color: #f4f4f4;
+}
+
+#loginForm input:focus {
+  background-color: rgb(175, 42, 42);
+  border: 2px solid #fff;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  color: #f4f4f4;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #f4f4f4;
+  background-color: rgb(176, 18, 18);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(168, 78, 78);
+}

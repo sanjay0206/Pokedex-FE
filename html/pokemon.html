@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quick's Pokedex</title>
+    <link rel="stylesheet" href="/css/pokemon.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/css/images/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img
+        src="/css/images/pokemon-title.png"
+        alt="Pokemon Logo"
+        class="pokemon-logo"
+      />
+      <div class="brand">POKEDEX EXPLORER</div>
+      <button class="logout-btn" onclick="logout()">LOG OUT</button>
+    </div>
+
+    <div class="container">
+      <p id="unauthorized-message"></p>
+
+      <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search by name" />
+      </div>
+
+      <ul id="pokedex"></ul>
+
+      <div class="pagination-container">
+        <button id="prevPage" class="pagination-button" onclick="changePage(-1)">PREVIOUS</button>
+        <span id="currentPage">Page 1</span>
+        <button id="nextPage" class="pagination-button" onclick="changePage(1)">NEXT</button>
+      </div>
+      
+    <script src="/js/pokemon.js"></script>
+  </body>
+</html>
